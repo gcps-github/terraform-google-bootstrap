@@ -49,6 +49,11 @@ variable "default_region" {
   type        = string
   default     = "us-central1"
 }
+   
+variable "billing_org_id" {
+  description = "Billing Org ID"
+  type        = string
+}
 
 /******************************************
   Optional variables
