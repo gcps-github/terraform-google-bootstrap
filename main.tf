@@ -176,7 +176,7 @@ resource "google_organization_iam_member" "org_admins_group" {
 
 resource "google_organization_iam_member" "org_billing_admin" {
   org_id = var.org_id
-  role   = "roles/billing.admin"
+  role   = "organizations/${var.org_id}/roles/CustomRole"
   member = "group:${var.group_billing_admins}"
 }
 
